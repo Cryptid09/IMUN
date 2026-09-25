@@ -1809,6 +1809,19 @@ img {
   line-height: 1.5;
 }
 
+.person-initials {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  background: var(--navy);
+  color: var(--gold-light);
+  font-family: var(--display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
 .person-card.chief .person-photo {
   aspect-ratio: 1;
 }
@@ -2260,6 +2273,77 @@ img {
 
   .footer-links {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Phone hardening: prevent grid blowout, keep every column inside the viewport */
+@media (max-width: 620px) {
+  .home-hero-inner > *,
+  .page-hero-inner > *,
+  .intro-grid > *,
+  .story-grid > *,
+  .program-grid > *,
+  .committee-grid > *,
+  .contact-grid > *,
+  .venue-grid > *,
+  .footer-top > *,
+  .split-layout > *,
+  .editorial-grid > *,
+  .rule-layout > *,
+  .stats-row > * {
+    min-width: 0;
+  }
+
+  .hero-title,
+  .page-hero-title,
+  .section-title,
+  .footer-title,
+  .committee-card h2,
+  .quote-inner blockquote,
+  .photo-wall-title {
+    overflow-wrap: anywhere;
+  }
+
+  .page-hero-title {
+    font-size: clamp(2.4rem, 11vw, 4.2rem);
+    line-height: 0.95;
+  }
+
+  /* Brand + burger only; Register lives in the slide-in menu panel */
+  .nav-register {
+    display: none;
+  }
+
+  .nav-inner {
+    gap: 12px;
+  }
+
+  .hero-kicker {
+    flex-wrap: wrap;
+    row-gap: 8px;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-meta {
+    font-size: 0.62rem;
+  }
+
+  .committee-card {
+    padding: 20px;
+  }
+
+  .contact-person a {
+    overflow-wrap: anywhere;
+  }
+
+  .countdown-header {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .rule-list li {
+    padding-left: 46px;
   }
 }
 

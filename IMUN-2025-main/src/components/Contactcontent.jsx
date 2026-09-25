@@ -3,18 +3,18 @@ import { MAP_EMBED_URL } from '../event';
 
 const contacts = [
   {
-    icon: 'SG',
-    name: 'Smriti Mukherjee',
+    icon: 'BK',
+    name: 'Bhuvneshwari Kashyap',
     role: 'Secretary General',
-    email: 'smriti.mukherjee03@gmail.com',
-    phone: '+91 99931 98924',
+    email: 'bhuvneshwarikashyap1234@gmail.com',
+    phone: '+91 9522432000',
   },
   {
-    icon: 'DG',
-    name: 'Harsh Deshpande',
+    icon: 'MB',
+    name: 'Manan Bhardwaj',
     role: 'Director General',
-    email: 'contact.harsh1807@gmail.com',
-    phone: '+91 74000 38224',
+    email: 'mananbharadwaj33@gmail.com',
+    phone: '+91 9461152238',
   },
   {
     icon: 'IM',

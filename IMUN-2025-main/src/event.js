@@ -8,7 +8,7 @@ export const EVENT = {
   venue: 'Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore',
   email: 'svvvimun9.0@gmail.com',
   registrationUrl:
-    'https://docs.google.com/forms/d/e/1FAIpQLSeU9hjAeNuoQAClS0yakrKA0zpbdMyqh9LOaBRAXYNmtdbBOw/viewform?usp=sharing&ouid=118079012721441868563',
+    'https://docs.google.com/forms/d/e/1FAIpQLScW7gV6zrqSBJJXgtGQxlJK2CuF3dTbtANod9_utfrq3z-YHw/viewform?pli=1',
 };
 
 export const MAP_EMBED_URL =

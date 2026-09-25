@@ -4,14 +4,14 @@ import chamber from '../assets/black bg.jpg';
 
 const generals = [
   {
-    name: 'Smriti Mukherjee',
+    name: 'Bhuvneshwari Kashyap',
     role: 'Secretary General',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550548/SMRITI2_xjfurq.jpg',
+    img: '',
   },
   {
-    name: 'Harsh Deshpande',
+    name: 'Manan Bhardwaj',
     role: 'Director General',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550551/Harsh_DP_tod5eh.jpg',
+    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550333/Manan_wlof6e.jpg',
   },
   {
     name: 'Avant Mishra',
@@ -35,11 +35,6 @@ const chiefs = [
     name: 'Anvisha Trivedi',
     role: 'Deputy Secretary General',
     img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550550/Anvisha_iwescg.jpg',
-  },
-  {
-    name: 'Manan Bhardwaj',
-    role: 'Director of Operations',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550333/Manan_wlof6e.jpg',
   },
   {
     name: 'Mansi Sharma',
@@ -82,10 +77,15 @@ const faculty = [
 ];
 
 function PersonCard({ member, chief = false }) {
+  const initials = member.name.split(' ').map((word) => word[0]).slice(0, 2).join('');
   return (
     <article className={`person-card ${chief ? 'chief' : ''}`}>
       <div className="person-photo">
-        <img src={member.img} alt={member.name} loading="lazy" />
+        {member.img ? (
+          <img src={member.img} alt={member.name} loading="lazy" />
+        ) : (
+          <span className="person-initials" aria-hidden="true">{initials}</span>
+        )}
       </div>
       <div className="person-copy">
         <h2>{member.name}</h2>
