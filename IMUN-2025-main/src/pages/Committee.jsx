@@ -1,20 +1,20 @@
 import React from 'react';
 import Aippm from '../assets/AIPPM.png';
-import HrcLogo from '../assets/UN WOMEN.png';
+import UnhrcLogo from '../assets/UN-HRC.png';
 import Mahabharata from '../assets/MAHABHARATA.png';
 import loksabha from '../assets/LOK SABHA.png';
 import ip from '../assets/IP.png';
 import bg from '../assets/committee page.jpg';
-import McuDcLogo from '../assets/HARRY POTTER.png';
+import McuDcLogo from '../assets/MCU-DC.png';
 import PageHero from '../components/PageHero.jsx';
 
 const committees = [
   {
-    code: 'HRC-01',
-    name: 'HRC',
+    code: 'UN-HRC-01',
+    name: 'UN-HRC',
     tagline: 'Advancing human rights and dignity in a changing world',
     desc: 'Deliberate on pressing human rights challenges and develop frameworks to protect dignity, equality, and justice in the modern era.',
-    logo: HrcLogo,
+    logo: UnhrcLogo,
     driveLink: 'https://drive.google.com/file/d/1jqgPXECmkOVMp7q5zlZGVscbMxnLkIaI/view?usp=sharing',
   },
   {
