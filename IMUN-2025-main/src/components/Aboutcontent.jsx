@@ -39,7 +39,7 @@ export default function Aboutcontent() {
               negotiate competing interests, and lead a group toward consensus.
             </p>
             <p>
-              Here, legacy meets leadership: a tradition of serious participation guiding a new generation of thoughtful,
+              A living legacy: a tradition of serious participation guiding a new generation of thoughtful,
               confident, and compassionate global citizens.
             </p>
           </div>
@@ -56,7 +56,7 @@ export default function Aboutcontent() {
         </div>
 
         <div className="container-shell motto-panel">
-          <p>“Where legacy meets leadership: cultivating dialogue, diplomacy, and the leaders of tomorrow.”</p>
+          <p>“Legacy of Xcellence: cultivating dialogue, diplomacy, and the leaders of tomorrow.”</p>
         </div>
       </section>
 

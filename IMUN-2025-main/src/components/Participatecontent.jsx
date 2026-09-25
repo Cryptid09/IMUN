@@ -13,7 +13,6 @@ const participationRules = [
   'Delegates must be available for the full conference from 17–19 November 2026.',
   'The participation fee is ₹1,500 per delegate, subject to the published registration phase.',
   'All participants must carry a valid school, college, or institutional identity card.',
-  'The final registration deadline is 8 November 2026, or earlier if committee allocation is full.',
   'English is the official language of committee proceedings and formal plenary sessions.',
 ];
 
@@ -87,6 +86,8 @@ export default function Participatecontent() {
                 <li>If SVVVIMUN 2026 is cancelled by the organisers, registered delegates will receive a full refund.</li>
                 <li>Delegate-initiated cancellations are non-refundable after credentials have been confirmed.</li>
                 <li>The conference is not responsible for travel or accommodation costs arising from a cancellation.</li>
+                <li>If you have previously participated in SVVVIMUN, your participation may be cancelled if any significant misconduct is found in your previous record.
+</li>
               </ul>
             </article>
           </div>

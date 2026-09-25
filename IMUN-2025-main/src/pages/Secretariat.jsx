@@ -1,28 +1,19 @@
 import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import chamber from '../assets/black bg.jpg';
+import bhuneshwariImg from '../assets/bhuneshwari.jpg';
 
 const generals = [
   {
     name: 'Bhuvneshwari Kashyap',
     role: 'Secretary General',
-    img: '',
+    img: bhuneshwariImg,
   },
   {
     name: 'Manan Bhardwaj',
     role: 'Director General',
     img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550333/Manan_wlof6e.jpg',
-  },
-  {
-    name: 'Avant Mishra',
-    role: 'Convener',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550547/Avant_Sir_o4uuo6.jpg',
-  },
-  {
-    name: 'Jayveer Singh Rathore',
-    role: 'Treasurer',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550598/WhatsApp_Image_2025-10-15_at_23.17.11_xk12ms.jpg',
-  },
+  }
 ];
 
 const chiefs = [

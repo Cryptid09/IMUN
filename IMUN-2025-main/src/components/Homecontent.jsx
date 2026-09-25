@@ -53,7 +53,7 @@ export default function Homecontent() {
               </p>
             </div>
             <div className="intro-note">
-              <p>“Where legacy meets leadership: cultivating dialogue, diplomacy, and the leaders of tomorrow.”</p>
+              <p>“Legacy of Xcellence: cultivating dialogue, diplomacy, and the leaders of tomorrow.”</p>
             </div>
           </div>
 
@@ -147,7 +147,7 @@ export default function Homecontent() {
           </span>
           <div>
             <blockquote>Diplomacy is not the absence of disagreement. It is the discipline of finding a way forward.</blockquote>
-            <cite>SVVVIMUN · Where legacy meets leadership</cite>
+            <cite>SVVVIMUN · Legacy of Xcellence</cite>
           </div>
         </div>
       </section>
