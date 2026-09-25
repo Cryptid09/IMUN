@@ -33,7 +33,7 @@ const institutions = [
 
 export default function Aboutinstitue() {
   return (
-    <section className="section-pad section-paper">
+    <section className="section-pad section-paper section-pad--reduced-top">
       <div className="container-shell">
         <p className="section-kicker">Delegate registry · previous editions</p>
         <h2 className="section-title small">Institutions that have participated in SVVVIMUN.</h2>

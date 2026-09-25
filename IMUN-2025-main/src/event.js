@@ -1,14 +1,16 @@
 export const EVENT = {
-  name: 'SVVVIMUN 2026',
-  shortName: 'SVVVIMUN',
+  name: 'SVVVIMUN X 2026',
+  shortName: 'SVVVIMUN X',
   year: '2026',
   startDate: '2026-11-17T09:00:00+05:30',
   dateLabel: '17—19 November 2026',
   openingDateLabel: '17 November 2026',
   venue: 'Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore',
-  email: 'svvvimun9.0@gmail.com',
+  email: 'SVVVIMUNX@gmail.com',
   registrationUrl:
     'https://docs.google.com/forms/d/e/1FAIpQLScW7gV6zrqSBJJXgtGQxlJK2CuF3dTbtANod9_utfrq3z-YHw/viewform?pli=1',
+  campusAmbassadorUrl:
+    'https://docs.google.com/forms/d/e/1FAIpQLSeIosBulErIMdhFwzu3QKYvjzqr3lea8F55ib1z4t-WTB_oYg/viewform',
 };
 
 export const MAP_EMBED_URL =

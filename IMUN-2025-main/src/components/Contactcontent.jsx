@@ -20,8 +20,8 @@ const contacts = [
     icon: 'IM',
     name: 'International Model United Nations',
     role: 'General Secretariat',
-    email: 'svvvimun9.0@gmail.com',
-    phone: '+91 99931 98924',
+    email: 'SVVVIMUNX@gmail.com',
+    phone: '+91 9522432000',
   },
 ];
 

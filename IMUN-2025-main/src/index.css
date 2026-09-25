@@ -108,6 +108,10 @@ img {
   padding-block: clamp(76px, 9vw, 132px);
 }
 
+.section-pad--reduced-top {
+  padding-top: clamp(24px, 4vw, 48px);
+}
+
 .section-soft {
   background: var(--ivory);
 }
@@ -1078,6 +1082,62 @@ img {
   content: "";
 }
 
+.why-svvvimun {
+  background: var(--ink);
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(196, 23, 17, 0.38);
+}
+
+.highlight-image {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--ivory);
+  padding: 4px;
+}
+
+.highlight-card h3 {
+  margin: 0 0 10px;
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.highlight-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
 .quote-band {
   position: relative;
   overflow: hidden;
@@ -1545,6 +1605,28 @@ img {
   font-size: 0.68rem;
   font-weight: 850;
   letter-spacing: 0.08em;
+}
+
+.campus-ambassador-block {
+  border-left: 3px solid var(--cobalt);
+  padding-left: 24px;
+  margin-top: 16px;
+}
+
+.campus-ambassador-block h2 {
+  margin: 0 0 12px;
+  font-family: var(--display);
+  font-size: clamp(1.9rem, 3.2vw, 3rem);
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+
+.campus-ambassador-block .section-lead {
+  margin: 0 0 20px;
+}
+
+.campus-ambassador-block .btn {
+  min-width: 240px;
 }
 
 .committee-intro {
@@ -2307,6 +2389,11 @@ img {
   .page-hero-title {
     font-size: clamp(2.4rem, 11vw, 4.2rem);
     line-height: 0.95;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   /* Brand + burger only; Register lives in the slide-in menu panel */

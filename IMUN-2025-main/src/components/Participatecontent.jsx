@@ -9,9 +9,10 @@ const steps = [
 ];
 
 const participationRules = [
-  'A delegate may participate in only one committee during SVVVIMUN 2026.',
+  'A delegate may participate in only one committee during SVVVIMUN X 2026.',
   'Delegates must be available for the full conference from 17–19 November 2026.',
-  'The participation fee is ₹1,500 per delegate, subject to the published registration phase.',
+  'Early Bird — Phase 1: ₹1,600 per delegate.',
+  'Phase 2: ₹1,800 per delegate.',
   'All participants must carry a valid school, college, or institutional identity card.',
   'English is the official language of committee proceedings and formal plenary sessions.',
 ];
@@ -83,12 +84,23 @@ export default function Participatecontent() {
             <article className="rule-block">
               <h2>Cancellation policy</h2>
               <ul className="rule-list">
-                <li>If SVVVIMUN 2026 is cancelled by the organisers, registered delegates will receive a full refund.</li>
+                <li>If SVVVIMUN X 2026 is cancelled by the organisers, registered delegates will receive a full refund.</li>
                 <li>Delegate-initiated cancellations are non-refundable after credentials have been confirmed.</li>
                 <li>The conference is not responsible for travel or accommodation costs arising from a cancellation.</li>
                 <li>If you have previously participated in SVVVIMUN, your participation may be cancelled if any significant misconduct is found in your previous record.
 </li>
               </ul>
+            </article>
+
+            <article className="rule-block campus-ambassador-block">
+              <h2>Campus Ambassadorship</h2>
+              <p className="section-lead">
+                Become the face of SVVVIMUN X on your campus. Lead registrations, coordinate with the Secretariat,
+                and earn exclusive perks, recognition, and networking opportunities.
+              </p>
+              <a className="btn btn-blue" href={EVENT.campusAmbassadorUrl} target="_blank" rel="noreferrer" style={{ marginTop: 16 }}>
+                Apply as Campus Ambassador
+              </a>
             </article>
           </div>
         </div>

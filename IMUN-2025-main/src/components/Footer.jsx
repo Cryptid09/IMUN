@@ -23,7 +23,7 @@ export default function Footer() {
             <h2 className="footer-title">Bring your perspective to the table.</h2>
             <p className="footer-copy">
               Join student leaders from across India for three days of diplomacy, debate, and decision-making at
-              SVVVIMUN 2026 in Indore.
+              SVVVIMUN X 2026 in Indore.
             </p>
             <div className="button-row" style={{ marginTop: 30 }}>
               <a className="btn btn-primary" href={EVENT.registrationUrl} target="_blank" rel="noreferrer">
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 SVVVIMUN. All rights reserved.</span>
+          <span>© 2026 SVVVIMUN X. All rights reserved.</span>
           <span>
             {EVENT.dateLabel} · Indore, Madhya Pradesh
           </span>

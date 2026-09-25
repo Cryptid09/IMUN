@@ -14,7 +14,7 @@ export default function Homehero() {
 
       <div className="container-shell home-hero-inner">
         <div className="hero-copy">
-          <p className="hero-kicker">The 2026 International Model United Nations</p>
+          <p className="hero-kicker">The 2026 International Model United Nations · Tenth Edition</p>
           <h1 className="hero-title">
             <span>SVVV</span>
             <span className="outline">IMUN</span>
@@ -38,6 +38,9 @@ export default function Homehero() {
             <Link className="btn btn-outline-light" to="/committee">
               Explore committees
             </Link>
+            <a className="btn btn-outline-light" href={EVENT.campusAmbassadorUrl} target="_blank" rel="noreferrer">
+              Campus Ambassador
+            </a>
           </div>
         </div>
 
