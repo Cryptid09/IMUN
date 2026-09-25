@@ -1759,20 +1759,40 @@ img {
 
 .contact-person {
   display: grid;
-  grid-template-columns: 46px 1fr;
+  grid-template-columns: 56px 1fr;
   gap: 18px;
   padding: 24px 0;
   border-bottom: 1px solid var(--line);
 }
 
+.contact-icon,
+.contact-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
 .contact-icon {
   display: grid;
-  width: 46px;
-  height: 46px;
   place-items: center;
-  border-radius: 50%;
   background: var(--ink);
   color: var(--gold);
+}
+
+.contact-avatar {
+  display: block;
+  border: 2px solid var(--white);
+  background: var(--ivory);
+  box-shadow: 0 0 0 1px var(--line);
+  object-fit: cover;
+  object-position: center top;
+}
+
+.contact-avatar-logo {
+  padding: 5px;
+  background: var(--white);
+  object-fit: contain;
+  object-position: center;
 }
 
 .contact-person strong {
@@ -1914,7 +1934,8 @@ img {
 }
 
 .chiefs-grid {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  justify-content: center;
 }
 
 .chiefs-grid .person-photo {

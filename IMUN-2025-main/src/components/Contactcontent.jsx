@@ -1,5 +1,10 @@
 import React from 'react';
 import { MAP_EMBED_URL } from '../event';
+import bhuneshwariImage from '../assets/bhuneshwari.jpg';
+import clgLogo from '../assets/image.png';
+
+const mananImage =
+  'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550333/Manan_wlof6e.jpg';
 
 const contacts = [
   {
@@ -8,6 +13,7 @@ const contacts = [
     role: 'Secretary General',
     email: 'bhuvneshwarikashyap1234@gmail.com',
     phone: '+91 9522432000',
+    image: bhuneshwariImage,
   },
   {
     icon: 'MB',
@@ -15,6 +21,7 @@ const contacts = [
     role: 'Director General',
     email: 'mananbharadwaj33@gmail.com',
     phone: '+91 9461152238',
+    image: mananImage,
   },
   {
     icon: 'IM',
@@ -22,6 +29,8 @@ const contacts = [
     role: 'General Secretariat',
     email: 'SVVVIMUNX@gmail.com',
     phone: '+91 9522432000',
+    image: clgLogo,
+    isLogo: true,
   },
 ];
 
@@ -40,7 +49,16 @@ export default function Contactcontent() {
           <div className="contact-panel" style={{ marginTop: 36 }}>
             {contacts.map((contact) => (
               <article className="contact-person" key={`${contact.name}-${contact.role}`}>
-                <span className="contact-icon">{contact.icon}</span>
+                {contact.image ? (
+                  <img
+                    className={`contact-avatar ${contact.isLogo ? 'contact-avatar-logo' : ''}`}
+                    src={contact.image}
+                    alt={contact.isLogo ? 'SVVVIMUN General Secretariat logo' : contact.name}
+                    loading="lazy"
+                  />
+                ) : (
+                  <span className="contact-icon">{contact.icon}</span>
+                )}
                 <div>
                   <strong>{contact.name}</strong>
                   <span>{contact.role}</span>
