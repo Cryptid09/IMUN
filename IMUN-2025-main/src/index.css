@@ -1865,7 +1865,7 @@ img {
 .people-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
+  gap: 32px;
   margin-top: 52px;
 }
 
@@ -1942,8 +1942,14 @@ img {
 }
 
 .chiefs-grid {
+  display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   justify-content: center;
+  gap: 18px;
+}
+
+.chiefs-grid .person-card {
+  min-width: 0;
 }
 
 .chiefs-grid .person-photo {
@@ -2117,8 +2123,8 @@ img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .chiefs-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .chiefs-grid .person-card {
+    flex: 0 0 calc(33.333% - 12px);
   }
 }
 
@@ -2178,8 +2184,8 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .chiefs-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .chiefs-grid .person-card {
+    flex: 0 0 calc(50% - 9px);
   }
 
   .institution-grid {
@@ -2316,9 +2322,12 @@ img {
   .committee-grid,
   .people-grid,
   .people-grid.faculty,
-  .chiefs-grid,
   .institution-grid {
     grid-template-columns: 1fr;
+  }
+
+  .chiefs-grid .person-card {
+    flex: 0 0 100%;
   }
 
   .day-card {

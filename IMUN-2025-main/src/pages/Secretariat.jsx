@@ -2,30 +2,32 @@ import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import chamber from '../assets/black bg.jpg';
 import bhuneshwariImg from '../assets/bhuneshwari.jpg';
+import kshitijImg from '../assets/Kshitij.jpeg';
+import prayagiImg from '../assets/Prayagi.jpeg';
 
 const generals = [
+  {
+    name: 'Manan Bhardwaj',
+    role: 'Director General',
+    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550333/Manan_wlof6e.jpg',
+  },
   {
     name: 'Bhuvneshwari Kashyap',
     role: 'Secretary General',
     img: bhuneshwariImg,
   },
-  {
-    name: 'Manan Bhardwaj',
-    role: 'Director General',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550333/Manan_wlof6e.jpg',
-  }
 ];
 
 const chiefs = [
   {
-    name: 'Aditya Gupta',
+    name: 'Kshitij Pratap Singh Tomar',
     role: 'Deputy Director General',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550551/Airbrush-Image-Enhancer-1760031134727_dvxvgi.jpg',
+    img: kshitijImg,
   },
   {
-    name: 'Anvisha Trivedi',
+    name: 'Prayagi Sahajwani',
     role: 'Deputy Secretary General',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550550/Anvisha_iwescg.jpg',
+    img: prayagiImg,
   },
   {
     name: 'Mansi Sharma',
@@ -137,7 +139,9 @@ export default function Secretariat() {
             <p>Portfolio leaders responsible for the working details behind every successful assembly.</p>
           </div>
           <div className="people-grid chiefs-grid">
-            {chiefs.map((member) => <PersonCard key={member.name} member={member} chief />)}
+            {chiefs.map((member, index) => (
+              <PersonCard key={`${member.name}-${index}`} member={member} chief />
+            ))}
           </div>
         </div>
       </section>
