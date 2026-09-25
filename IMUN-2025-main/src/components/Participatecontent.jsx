@@ -10,7 +10,7 @@ const steps = [
 
 const participationRules = [
   'A delegate may participate in only one committee during SVVVIMUN 2026.',
-  'Delegates must be available for the full conference from 11–13 November 2026.',
+  'Delegates must be available for the full conference from 17–19 November 2026.',
   'The participation fee is ₹1,500 per delegate, subject to the published registration phase.',
   'All participants must carry a valid school, college, or institutional identity card.',
   'The final registration deadline is 8 November 2026, or earlier if committee allocation is full.',

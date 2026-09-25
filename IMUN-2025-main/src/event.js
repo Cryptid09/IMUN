@@ -2,9 +2,9 @@ export const EVENT = {
   name: 'SVVVIMUN 2026',
   shortName: 'SVVVIMUN',
   year: '2026',
-  startDate: '2026-11-11T09:00:00+05:30',
-  dateLabel: '11—13 November 2026',
-  openingDateLabel: '11 November 2026',
+  startDate: '2026-11-17T09:00:00+05:30',
+  dateLabel: '17—19 November 2026',
+  openingDateLabel: '17 November 2026',
   venue: 'Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore',
   email: 'svvvimun9.0@gmail.com',
   registrationUrl:

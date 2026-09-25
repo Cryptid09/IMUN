@@ -63,7 +63,7 @@ export default function Homecontent() {
               <span className="stat-label">Days of assembly</span>
             </div>
             <div className="stat">
-              <span className="stat-value">07</span>
+              <span className="stat-value">06</span>
               <span className="stat-label">Committees to join</span>
             </div>
             <div className="stat">

@@ -1,33 +1,24 @@
 import React from 'react';
 import Aippm from '../assets/AIPPM.png';
-import Un from '../assets/UN WOMEN.png';
-import Disec from '../assets/UN DISEC.png';
+import HrcLogo from '../assets/UN WOMEN.png';
 import Mahabharata from '../assets/MAHABHARATA.png';
 import loksabha from '../assets/LOK SABHA.png';
 import ip from '../assets/IP.png';
 import bg from '../assets/committee page.jpg';
-import harrypotter from '../assets/HARRY POTTER.png';
+import McuDcLogo from '../assets/HARRY POTTER.png';
 import PageHero from '../components/PageHero.jsx';
 
 const committees = [
   {
-    code: 'UNW-01',
-    name: 'UN Women',
-    tagline: 'Protecting and advancing women’s rights in the 21st century',
-    desc: 'Deliberate on global challenges to gender equality and develop frameworks to strengthen women’s rights and empowerment in the modern era.',
-    logo: Un,
+    code: 'HRC-01',
+    name: 'HRC',
+    tagline: 'Advancing human rights and dignity in a changing world',
+    desc: 'Deliberate on pressing human rights challenges and develop frameworks to protect dignity, equality, and justice in the modern era.',
+    logo: HrcLogo,
     driveLink: 'https://drive.google.com/file/d/1jqgPXECmkOVMp7q5zlZGVscbMxnLkIaI/view?usp=sharing',
   },
   {
-    code: 'DISEC-02',
-    name: 'UN DISEC',
-    tagline: 'Regulating emerging nuclear and conventional weapons',
-    desc: 'Address evolving weapons technology and discuss practical measures for disarmament, arms control, and international security cooperation.',
-    logo: Disec,
-    driveLink: 'https://drive.google.com/file/d/122w9RzgqLP8kh7Gcay871T-6jXElcG43/view?usp=drive_link',
-  },
-  {
-    code: 'AIPPM-03',
+    code: 'AIPPM-02',
     name: 'AIPPM',
     tagline: 'Safeguarding electoral rights in contemporary India',
     desc: 'Engage in political discourse on electoral reform, transparency, and the preservation of democratic values in India’s governance system.',
@@ -35,7 +26,7 @@ const committees = [
     driveLink: 'https://drive.google.com/file/d/1mJgldDCrdYPIIn0jl9ZfYq9Vr63qbCsz/view?usp=drive_link',
   },
   {
-    code: 'HST-04',
+    code: 'HST-03',
     name: 'Mahabharata Committee',
     tagline: 'The collapse of Hastinapur',
     desc: 'Relive a defining turning point in Indian mythology, where diplomacy, power, and fate collide over the destiny of an empire.',
@@ -43,15 +34,15 @@ const committees = [
     driveLink: 'https://drive.google.com/file/d/1abKjkBs_WbGAVhqXmB4-OhWeLmggdp6F/view?usp=drive_link',
   },
   {
-    code: 'HP-05',
-    name: 'Harry Potter Committee',
-    tagline: 'After the battle: rebuilding the wizarding world',
-    desc: 'Navigate the challenges of reconstruction, governance, justice, and reconciliation in a society shaped by magical conflict.',
-    logo: harrypotter,
+    code: 'MCU-DC-04',
+    name: 'MCU vs DC',
+    tagline: 'Heroes, multiverses, and the battle for supremacy',
+    desc: 'Step into a clash of cinematic universes where delegates navigate power, responsibility, and rivalry to shape the fate of heroes and worlds.',
+    logo: McuDcLogo,
     driveLink: 'https://drive.google.com/file/d/1vXXqmAGrxglutMl21ijxq9CUyLjjrOEj/view?usp=drive_link',
   },
   {
-    code: 'LS-06',
+    code: 'LS-05',
     name: 'Lok Sabha',
     tagline: 'Governance of religious and charitable institutions',
     desc: 'Debate legal and administrative reforms required for effective management and accountability within India’s religious and charitable institutions.',
@@ -59,7 +50,7 @@ const committees = [
     driveLink: 'https://drive.google.com/file/d/1nVtrow-tuPYtfWkExC6UMKGi6ex15LCP/view?usp=drive_link',
   },
   {
-    code: 'IP-07',
+    code: 'IP-06',
     name: 'International Press',
     tagline: 'Photography and journalism',
     desc: 'Document and narrate the ideas, decisions, and people shaping SVVVIMUN 2026 through responsible journalism and visual reporting.',
@@ -74,7 +65,7 @@ export default function Committee() {
       <PageHero
         eyebrow="Committee docket"
         title="Choose the room where your perspective matters."
-        description="Seven committee tracks. One shared standard of preparation, evidence, and constructive negotiation."
+        description="Six committee tracks. One shared standard of preparation, evidence, and constructive negotiation."
         image={bg}
         index="03"
       />
