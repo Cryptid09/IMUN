@@ -1808,12 +1808,20 @@ img {
   font-size: 0.8rem;
 }
 
+.contact-person > div {
+  min-width: 0;
+}
+
 .contact-person a,
 .contact-person p {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
   margin: 7px 0 0;
   color: #4e3b38;
   font-size: 0.9rem;
   line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .contact-person a:hover {
