@@ -1083,7 +1083,12 @@ img {
 }
 
 .why-svvvimun {
-  background: var(--ink);
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.why-svvvimun .section-kicker {
+  color: var(--ink);
 }
 
 .highlights-grid {

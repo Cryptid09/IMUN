@@ -8,7 +8,7 @@ import lg6 from '../assets/lg6.png';
 
 export default function WhySVVVIMUN() {
   return (
-    <section className="section-pad section-dark why-svvvimun" style={{ color: 'var(--white)' }}>
+    <section className="section-pad why-svvvimun">
       <div className="container-shell">
         <p className="section-kicker">Why SVVVIMUN X?</p>
         <h2 className="section-title small">Built on commitment, credibility, and a Legacy of Xcellence.</h2>
