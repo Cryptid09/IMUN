@@ -10,7 +10,7 @@ const steps = [
 
 const participationRules = [
   'A delegate may participate in only one committee during SVVVIMUN X 2026.',
-  'Delegates must be available for the full conference from 17–19 November 2026.',
+  'Delegates must be available for the full conference from 2–4 November 2026.',
   'Early Bird — Phase 1: ₹1,600 per delegate.',
   'Phase 2: ₹1,800 per delegate.',
   'All participants must carry a valid school, college, or institutional identity card.',
