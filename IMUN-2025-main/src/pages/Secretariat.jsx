@@ -4,52 +4,66 @@ import chamber from '../assets/black bg.jpg';
 import bhuneshwariImg from '../assets/bhuneshwari.jpg';
 import kshitijImg from '../assets/Kshitij.jpeg';
 import prayagiImg from '../assets/Prayagi.jpeg';
+import mananImg from '../assets/Manan.jpeg';
+import amitImg from '../assets/Amit.jpeg';
+import divyanshImg from '../assets/divyansh.jpeg';
+import supriyaImg from '../assets/supriya.jpeg';
+import mayankImg from '../assets/Mayank.jpeg';
+import iqrashImg from '../assets/Iqrash.jpeg';
+import vedikaImg from '../assets/Vedika.jpeg';
 
-const generals = [
-  {
-    name: 'Manan Bhardwaj',
-    role: 'Director General',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550333/Manan_wlof6e.jpg',
-  },
+const committee = [
   {
     name: 'Bhuvneshwari Kashyap',
     role: 'Secretary General',
     img: bhuneshwariImg,
   },
-];
-
-const chiefs = [
+  {
+    name: 'Manan Bharadwaj',
+    role: 'Director General',
+    img: mananImg,
+  },
+  {
+    name: 'Amit Lathoriya',
+    role: 'Deputy Secretary General',
+    img: amitImg,
+  },
   {
     name: 'Kshitij Pratap Singh Tomar',
     role: 'Deputy Director General',
     img: kshitijImg,
   },
   {
+    name: 'Divyansh Bhand',
+    role: 'Director of Operations',
+    img: divyanshImg,
+  },
+  {
+    name: 'Supriya Ray',
+    role: 'Director of Content Development',
+    img: supriyaImg,
+  },
+  {
     name: 'Prayagi Sahajwani',
-    role: 'Deputy Secretary General',
+    role: 'Director of EB Affairs',
     img: prayagiImg,
   },
   {
-    name: 'Mansi Sharma',
-    role: 'Director of Creative Strategy',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550342/Mansi_vwedl7.jpg',
-  },
-  {
-    name: 'Kashish Gera',
-    role: 'Director of Content Development',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550353/Kash_mt9foo.jpg',
-  },
-  {
-    name: 'Harsh Pratap Singh Thakur',
+    name: 'Mayank Singh Shaktawat',
     role: 'Director of Logistics',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550359/Harsh_Partab_zw596a.jpg',
+    img: mayankImg,
   },
   {
-    name: 'Ayush Singh',
-    role: 'Director of Delegate Affairs',
-    img: 'https://res.cloudinary.com/dp9irxc0x/image/upload/v1760550365/Aayush_cmjhjt.jpg',
+    name: 'Mohd Iqrash Mansuri',
+    role: 'Director of Sponsorship',
+    img: iqrashImg,
   },
-];
+  {
+    name: 'Vedika Dave',
+    role: 'Director of Delegate Affairs',
+    img: vedikaImg,
+  },
+  ];
 
 const faculty = [
   {
@@ -69,10 +83,11 @@ const faculty = [
   },
 ];
 
-function PersonCard({ member, chief = false }) {
+function PersonCard({ member, chief = false, size = 'normal' }) {
   const initials = member.name.split(' ').map((word) => word[0]).slice(0, 2).join('');
+  const sizeClass = size === 'large' ? 'large' : size === 'small' ? 'small' : '';
   return (
-    <article className={`person-card ${chief ? 'chief' : ''}`}>
+    <article className={`person-card ${chief ? 'chief' : ''} ${sizeClass}`}>
       <div className="person-photo">
         {member.img ? (
           <img src={member.img} alt={member.name} loading="lazy" />
@@ -118,29 +133,19 @@ export default function Secretariat() {
         <div className="container-shell">
           <div className="people-heading">
             <div>
-              <p className="section-kicker">General secretariat</p>
-              <h2 className="section-title small">The Generals.</h2>
+              <p className="section-kicker">organising committee</p>
+              <h2 className="section-title small">The Chiefs.</h2>
             </div>
             <p>Conference leadership, institutional coordination, operations, finance, and delegate experience.</p>
           </div>
-          <div className="people-grid">
-            {generals.map((member) => <PersonCard key={member.name} member={member} />)}
+          <div className="people-grid committee-top">
+            {committee.slice(0, 4).map((member) => (
+              <PersonCard key={member.name} member={member} size="large" />
+            ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section-pad people-section section-soft">
-        <div className="container-shell">
-          <div className="people-heading">
-            <div>
-              <p className="section-kicker">Directorate record</p>
-              <h2 className="section-title small">The Chiefs.</h2>
-            </div>
-            <p>Portfolio leaders responsible for the working details behind every successful assembly.</p>
-          </div>
-          <div className="people-grid chiefs-grid">
-            {chiefs.map((member, index) => (
-              <PersonCard key={`${member.name}-${index}`} member={member} chief />
+          <div className="people-grid committee-rest">
+            {committee.slice(4).map((member) => (
+              <PersonCard key={member.name} member={member} size="small" />
             ))}
           </div>
         </div>

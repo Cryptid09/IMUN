@@ -1969,6 +1969,56 @@ img {
   font-size: 0.68rem;
 }
 
+/* Organising committee: first four large, remaining small */
+.people-grid.committee-top {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 40px;
+}
+
+.people-grid.committee-rest {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 0;
+}
+
+.committee-rest .person-photo {
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.committee-rest .person-copy {
+  padding: 16px 8px;
+  text-align: center;
+}
+
+.committee-rest .person-copy h2 {
+  font-size: 0.9rem;
+}
+
+.committee-rest .person-copy p {
+  font-size: 0.68rem;
+}
+
+@media (max-width: 1080px) {
+  .people-grid.committee-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .people-grid.committee-rest {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .people-grid.committee-top {
+    grid-template-columns: 1fr;
+  }
+
+  .people-grid.committee-rest {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* Photo wall */
 .photo-wall {
   position: relative;
