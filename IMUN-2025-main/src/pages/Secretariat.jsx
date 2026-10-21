@@ -2,10 +2,8 @@ import React from 'react';
 import PageHero from '../components/PageHero.jsx';
 import chamber from '../assets/black bg.jpg';
 import bhuneshwariImg from '../assets/bhuneshwari.jpg';
-import kshitijImg from '../assets/Kshitij.jpeg';
 import prayagiImg from '../assets/Prayagi.jpeg';
 import mananImg from '../assets/Manan.jpeg';
-import amitImg from '../assets/Amit.jpeg';
 import divyanshImg from '../assets/divyansh.jpeg';
 import supriyaImg from '../assets/supriya.jpeg';
 import mayankImg from '../assets/Mayank.jpeg';
@@ -26,12 +24,12 @@ const committee = [
   {
     name: 'Amit Lathoriya',
     role: 'Deputy Secretary General',
-    img: amitImg,
+    img: 'https://res.cloudinary.com/ce52ytao/image/upload/c_fill,g_auto,w_600,h_690,q_auto,f_auto/svvvimun/secretariat/amit.jpg',
   },
   {
     name: 'Kshitij Pratap Singh Tomar',
     role: 'Deputy Director General',
-    img: kshitijImg,
+    img: 'https://res.cloudinary.com/ce52ytao/image/upload/c_fill,g_auto,w_600,h_690,q_auto,f_auto/svvvimun/secretariat/kshitij.jpg',
   },
   {
     name: 'Divyansh Bhand',
