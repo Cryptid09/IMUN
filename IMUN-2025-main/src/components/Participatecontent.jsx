@@ -19,8 +19,8 @@ const participationRules = [
 
 const conductRules = [
   ['Integrity & authenticity', 'Submit accurate information. Plagiarism, impersonation, or fraud may lead to disqualification.'],
-  ['Respect & courtesy', 'Treat every delegate, chair, faculty advisor, and staff member with professional respect.'],
-  ['Diversity & inclusion', 'No form of discrimination, harassment, bullying, or retaliation will be tolerated.'],
+  ['Respect & courtesy', 'Treat every delegate, chair, faculty advisor, and staff member with professional respect. Any chair or delegate found in violation may be disqualified and removed immediately.'],
+  ['Diversity & inclusion', 'No form of discrimination, harassment, bullying, or retaliation will be tolerated. No foreign substances except medicines with a valid prescription are allowed on campus.'],
   ['Formal attire', 'Western business formals or equivalent national dress are required in committee areas.'],
   ['Punctuality', 'Arrive at committee rooms and plenary sessions at least ten minutes before the gavel.'],
   ['Recording policy', 'Photography and recording require explicit permission from the Secretariat.'],
@@ -68,7 +68,7 @@ export default function Participatecontent() {
               <h2>Code of conduct</h2>
               <p>
                 At SVVVIMUN 2026, delegates are expected to uphold the standards of a professional international assembly.
-                By registering, participants accept the following commitments.
+                By registering, participants accept the following commitments. Failure to comply will subject the participant to disqualification.
               </p>
               <ul className="rule-list">
                 {conductRules.map(([title, description]) => (

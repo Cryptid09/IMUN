@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
+import { PHOTOWALL_IMAGES } from '../assets/photoWall.js';
 
 const DEFAULT_IMAGES = [
+  ...PHOTOWALL_IMAGES,
 
   {
     src: 'https://res.cloudinary.com/dohdiu2s6/image/upload/v1759691915/IMG_4791_ikt76p.jpg',
@@ -12,10 +14,6 @@ const DEFAULT_IMAGES = [
     alt: 'IMUN2024'
   },
   {
-    src: 'https://res.cloudinary.com/dohdiu2s6/image/upload/v1759691918/IMG_4141_da4q7g.jpg',
-    alt: 'IMUN2024'
-  },
-    {
     src: 'https://res.cloudinary.com/dohdiu2s6/image/upload/v1759691918/IMG_4141_da4q7g.jpg',
     alt: 'IMUN2024'
   },
