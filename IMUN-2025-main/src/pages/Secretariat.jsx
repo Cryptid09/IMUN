@@ -29,7 +29,7 @@ const committee = [
   {
     name: 'Kshitij Pratap Singh Tomar',
     role: 'Deputy Director General',
-    img: 'https://res.cloudinary.com/ce52ytao/image/upload/v1792642987/tempK.jpg',
+    img: 'https://res.cloudinary.com/ce52ytao/image/upload/c_fill,g_auto,w_600,h_690,q_auto,f_auto/svvvimun/secretariat/kshitij.jpg',
   },
   {
     name: 'Divyansh Bhand',
