@@ -15,7 +15,7 @@ const committees = [
     tagline: 'Examining the human rights situation with emphasis on civilian protection and accountability.',
     desc: 'Examine civilian protection, state responsibility, and the mechanisms available to hold perpetrators of human rights violations accountable.',
     logo: UnhrcLogo,
-    driveLink: 'https://drive.google.com/file/d/1jqgPXECmkOVMp7q5zlZGVscbMxnLkIaI/view?usp=sharing',
+    driveLink: 'https://docs.google.com/document/d/1xhB6xVLMAv4chUIiIKZGp0yPLrCGhSYrqISm1lUyd7w/edit?usp=sharing',
   },
   {
     code: 'AIPPM-02',
