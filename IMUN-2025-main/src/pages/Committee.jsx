@@ -23,7 +23,7 @@ const committees = [
     tagline: 'Caste Census and the Future of Reservation in India.',
     desc: 'Debate the political, legal, and social implications of a caste census and what it means for the future of reservation in India.',
     logo: Aippm,
-    driveLink: 'https://drive.google.com/file/d/1mJgldDCrdYPIIn0jl9ZfYq9Vr63qbCsz/view?usp=drive_link',
+    driveLink: 'https://docs.google.com/document/d/1gc7thiz9EzoHLKQo34VPXv3y2PFyLB_UsSCyFrJw9dc/edit?tab=t.0',
   },
   {
     code: 'LS-03',
@@ -55,7 +55,7 @@ const committees = [
     tagline: 'Photography and Journalism.',
     desc: 'Document and narrate the ideas, decisions, and people shaping SVVVIMUN 2026 through responsible journalism and visual reporting.',
     logo: ip,
-    driveLink: 'https://drive.google.com/file/d/1HEX9zJuFRG0R56kNmjmn0v36BH2Xe8X6/view?usp=drive_link',
+    driveLink: 'https://docs.google.com/document/d/1H0WgCf65srIOZTKtglHb8uFT5C4ZkGI5/edit?usp=sharing&ouid=116188942236833762658&rtpof=true&sd=true',
   },
 ];
 
